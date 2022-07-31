@@ -1,0 +1,15 @@
+type Query {
+	getAllEmployee: [Employee]
+	getEmployee(id: ID): Employee
+}
+
+type Mutation {
+	createEmployee(name: String!, age: Int!, salary: String!): Employee
+}
+
+type Employee {
+	id: ID,
+	name: String,
+	age: Int,
+	salary: String
+}
